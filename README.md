@@ -20,7 +20,18 @@ ukki-front 이름으로 해당 경로에 이미지 빌드함
 docker buildx build -t ukki-back .
 ukki-back 이름으로 해당 경로에 이미지 빌드함
 
+## 6. 컨테이너 실행
+docker run -d -p 80:80 --name ukki-front-container ukki-front   
+docker ps를 통해서 제대로 실행됐는지 (어느 포트에서 실행됐는지) 확인
 
-## 6. docker desktop 실행
+docker run -d -p 8080:8080 --name ukki-back-container ukki-back
+docker ps
 
-## 7. 
+## 7. 컨테이너 돌아갔으므로 들어가서 확인하기
+프론트엔드 : http://127.0.0.1
+
+백엔드(API 확인용) : http://127.0.0.1:8080/api
+
+## 8. env파일 및 yml 파일 확인
+
+## 9. docker compose로 프론트 엔드와 백엔드 합쳐줄 수 있음 (yml파일)
