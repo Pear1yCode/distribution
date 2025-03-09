@@ -40,5 +40,5 @@ docker ps
 
 ## 11. ec2 인스턴스 생성
 
-## 12. 컨테이너와 이미지
+## 12. 컨테이너와 이미지 인스턴스로
 powershell에서 docker desktop 켜져있어야 명령어 실행됨
